@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import MyNav from './components/MyNav';
+import MyHome from './components/MyHome';
+import MyFooter from './components/MyFooter';
+import ChiSiamo from './components/ChiSiamo';
+import NotFound from './components/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+      <MyNav />
+      <Routes>
+        <Route path="/" element={<MyHome />} />
+        <Route path="/chisiamo" element={<ChiSiamo />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <MyFooter />
+    </BrowserRouter>
+
   );
 }
 

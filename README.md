@@ -1,3 +1,8 @@
+his project originated as an exercise in using React and APIs. This application is designed to display the weather in any city worldwide. Users can search for a city using the search bar and view information about the current day's weather and the current week's forecast. (The API used does not allow for viewing beyond the current week).
+
+Questo progetto nasce come esercitazione nell'utilizzo di React e delle API.
+Questa applicazione serve per poter visualizzare il meteo in qualsiasi città del mondo. L'utente è in grado di cercare una città con la barra di ricerca e visualizzare le informazioni inerenti al tempo della giornata e della settimana corrente. (L'api utilizzata non permette di poter visualizzare oltre alla settimana attuale).
+
 Ho utilizzato: 
 npm install react-bootstrap bootstrap
 npm install react-router-dom
